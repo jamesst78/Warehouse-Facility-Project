@@ -1,11 +1,13 @@
 package Storage;
 
-import java.io.Console;
+
+
 import java.util.ArrayList;
+
 public class SubWarehouse {
 	
 	
-	int maxCapacity;
+	 int maxCapacity;
 	ArrayList<Integer> itemWeights = new ArrayList<>() ;
 	ArrayList<Integer> itemProfits = new ArrayList<>(); 					
 	int maxChosenProfit;
@@ -21,19 +23,31 @@ public class SubWarehouse {
 		
 		//Your code here
 		//You're allowed to use any other pre-defined methods.
-		
-		
-	
-        
- 
-        maxChosenProfit =  0; //Update with your answer.
+		// I am using a dynamic coding startegy of  the 0-1 Knupsack 
+		int profit = optimizeSelection(this.availableItems , this.maxCapacity , this.itemWeights , this.itemProfits);
+		 maxChosenProfit = profit; //Update with your answer.
         
         //TODO: Enter your GUC mail here
-        String email = "";
+        String email = "ali.ghieth@student.guc.edu.eg";
         System.out.println("Email: " + email);
     }
-		
-	
+	public static int optimizeSelection(int Position , int MaxCapacity , ArrayList<Integer> itemWeight , ArrayList<Integer>ProfitArray )
+	{
+		if (Position == 0 ||  MaxCapacity == 0 )
+		{
+			return 0;
+		}
+		else if (itemWeight.get(Position -1 ) > MaxCapacity)
+		{
+			return optimizeSelection(Position -1 , MaxCapacity, itemWeight, ProfitArray);
+		}
+		else
+		{
+			int temp0 = optimizeSelection(Position -1 , MaxCapacity, itemWeight, ProfitArray);
+			int temp1 =    ProfitArray.get(Position -1 ) + optimizeSelection(Position -1 ,MaxCapacity  - (itemWeight.get(Position - 1)) , itemWeight, ProfitArray);
+			return ( max(temp1, temp0));
+		}
+	}
 	
 	public static int max(int a, int b)
 	    {
@@ -41,20 +55,16 @@ public class SubWarehouse {
 	    }
 	
 	
-	
-	
-
 	public static void main(String[] args) {
 		
 		SubWarehouse SW = new SubWarehouse();
-		
 		//populating the ArrayLists   
 		SW.itemWeights.add(56);
 		SW.itemWeights.add(59);
 		SW.itemWeights.add(80);       // itemWeights = {56 , 59 , 80 , 64, 75 , 17};
 		SW.itemWeights.add(64);
 		SW.itemWeights.add(75);
-		SW.itemWeights.add(17);	
+		SW.itemWeights.add(17);
 		
 		
 		SW.itemProfits.add(50);                                
@@ -64,8 +74,9 @@ public class SubWarehouse {
 		SW.itemProfits.add(50);
 		SW.itemProfits.add(5);
 
+
 		SW.maxCapacity = 190;          	   //maximum warehouse capacity = 190 weight unit
-		SW.availableItems = 6; 			   //available items are 6
+		SW.availableItems = 6; 		  //available items are 6
 		
 		
 		
@@ -90,21 +101,12 @@ public class SubWarehouse {
 		
 		
 		/*DataLoader.loadArray("kp100.txt", SW.itemWeights, SW.itemProfits, SW.maxCapacity);
-		 * 
+		 
 		SW.maxCapacity= 49877;
 		SW.availableItems = 10000 ;
-		SW.optimizeSelection();
-		System.out.println( "Max Profit " + SW.maxChosenProfit); // should be Max Profit 594669   
-		*
-		*
-		*/
+		SW.optimizeSelection();*/
+		//System.out.println( "Max Profit " + SW.maxChosenProfit); // should be Max Profit 594669   */
 
-
-		
-		
-		
-		
-		
 	}
 
 	
