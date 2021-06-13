@@ -1,7 +1,8 @@
 package Storage;
 
-import java.io.Console;
+
 import java.util.ArrayList;
+import java.util.Collections;
 public class SubWarehouse {
 	
 	
@@ -14,31 +15,94 @@ public class SubWarehouse {
 	
 	
 	
+	public static ArrayList<Double>getRatio(ArrayList<Integer> itemWeights,
+			ArrayList<Integer> itemProfits) {
+		ArrayList<Double> ratio = new ArrayList<>();
+		int length = itemProfits.size();
+		for(int i=0;i<length;i++) {
+			ratio.add((double)itemProfits.get(i)/itemWeights.get(i));
+		}
+		
+		return ratio;
+		
+	}
+	
+	public static int getCurrentWeight(ArrayList<Integer> chosenIndex,
+			ArrayList<Integer> itemWeights) {
+		int sum=0;
+		for(int i=0; i<chosenIndex.size();i++) {
+			sum+= itemWeights.get(chosenIndex.get(i));
+		}
+		return sum;
+	}
+	
+	public static int getCurrentProfit(ArrayList<Integer> chosenIndex,
+			ArrayList<Integer> itemProfits) {
+		int sum=0;
+		for(int i=0; i<chosenIndex.size();i++) {
+			sum+= itemProfits.get(chosenIndex.get(i));
+		}
+		return sum;
+	}
+	
+	public static boolean replace(ArrayList<Integer> chosenIndex,
+			ArrayList<Integer> itemProfits,ArrayList<Integer> itemWeights,int index,int maxCapacity) {
+		int leastRatioIndex = chosenIndex.get(chosenIndex.size()-1);
+		int previousProfit =getCurrentProfit(chosenIndex,itemProfits);
+		chosenIndex.remove(chosenIndex.size()-1);
+		chosenIndex.add(index);
+		if(getCurrentWeight(chosenIndex,itemWeights)==maxCapacity) {
+			if(getCurrentProfit(chosenIndex,itemProfits)>previousProfit) {
+				return true;
+			}
+		}
+		chosenIndex.remove(chosenIndex.size()-1);
+		chosenIndex.add(leastRatioIndex);
+		
+		return false;
+	}
 	
 	public void optimizeSelection()
 	{
-		//TODO: Create a method that optimizes the selection of items in order to produce the most profit and make the most out of the storage space.
-		
-		//Your code here
-		//You're allowed to use any other pre-defined methods.
-		
+		ArrayList<Double> ratio=getRatio(itemWeights,itemProfits);
+		ArrayList<Integer> chosenIndex=new ArrayList<>();
+		double maxRatio=-1;
+		int index=-1;
+		for(int i=0;i<availableItems;i++) {
+			maxRatio=Collections.max(ratio);
+			index=ratio.indexOf(maxRatio);
+			
+			if(getCurrentWeight(chosenIndex,itemWeights)+itemWeights.indexOf(index)==maxCapacity) {
+				chosenIndex.add(index);
+				maxChosenProfit=getCurrentProfit(chosenIndex,itemProfits);
+				return;
+			}
+			
+			if((getCurrentWeight(chosenIndex,itemWeights)+itemWeights.get(index))>maxCapacity) {
+				if(replace(chosenIndex,itemProfits,itemWeights,index,maxCapacity)) {
+				}
+			}
+			
+			if((getCurrentWeight(chosenIndex,itemWeights)+itemWeights.get(index))<maxCapacity) {
+				chosenIndex.add(index);
+				
+			}
+			
+			
+			ratio.set(i, -1.0);
+			
+		}
+		maxChosenProfit=getCurrentProfit(chosenIndex,itemProfits);
 		
 	
         
  
-        maxChosenProfit =  0; //Update with your answer.
+        maxChosenProfit =  getCurrentProfit(chosenIndex,itemProfits);; //Update with your answer.
         
         //TODO: Enter your GUC mail here
-        String email = "";
+        String email = "alfarouk.sabry@student.guc.edu.eg";
         System.out.println("Email: " + email);
     }
-		
-	
-	
-	public static int max(int a, int b)
-	    {
-	      return (a > b) ? a : b;
-	    }
 	
 	
 	
@@ -89,15 +153,13 @@ public class SubWarehouse {
 		
 		
 		
-		/*DataLoader.loadArray("kp100.txt", SW.itemWeights, SW.itemProfits, SW.maxCapacity);
-		 * 
-		SW.maxCapacity= 49877;
-		SW.availableItems = 10000 ;
-		SW.optimizeSelection();
-		System.out.println( "Max Profit " + SW.maxChosenProfit); // should be Max Profit 594669   
-		*
-		*
-		*/
+		//DataLoader.loadArray("kp100.txt", SW.itemWeights, SW.itemProfits, SW.maxCapacity);
+		 
+		//SW.maxCapacity= 49877;
+		//SW.availableItems = 10000 ;
+		//SW.optimizeSelection();
+	//	System.out.println( "Max Profit " + SW.maxChosenProfit); // should be Max Profit 594669   
+		
 
 
 		
