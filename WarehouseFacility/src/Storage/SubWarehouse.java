@@ -2,6 +2,10 @@ package Storage;
 
 import java.io.Console;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.TreeMap;
 public class SubWarehouse {
 	
 	
@@ -22,17 +26,72 @@ public class SubWarehouse {
 		//Your code here
 		//You're allowed to use any other pre-defined methods.
 		
+				
 		
+		TreeMap<Integer,Integer> t = new TreeMap<>();
 	
-        
+		
+		
+		for (int i = 0; i<itemWeights.size(); i++) {
+			
+			t.put(itemWeights.get(i),itemProfits.get(i));
+			
+		}
+		
+
+		
+		int maxprof = Integer.MIN_VALUE;
+		
+		long pow_set_size = (long)Math.pow(2, itemWeights.size());
+		
+		
+		for(int counter = 0; counter < pow_set_size; counter++)
+        {
+			Iterator<Map.Entry<Integer, Integer>> iterator1 = t.entrySet().iterator();		 
+			Map.Entry<Integer, Integer> entry1 = null;
+			
+			int j = 0;
+			int wincell = 0;
+			int pincell = 0;
+			
+			TreeMap<Integer, Integer> cell = new TreeMap<>();
+			
+			while(iterator1.hasNext()){
+			    
+			    entry1 = iterator1.next();
+			    
+			    if((counter & (1 << j)) > 0) {
+	                cell.put(entry1.getKey(), entry1.getValue());
+				    wincell += entry1.getKey();
+				    pincell+= entry1.getValue();
+				    
+			    }
+			    j++;
+			    
+			    
+			    
+			}
+
+		   if (wincell<=190) {
+			   maxprof = max(pincell,maxprof);
+		   }
+			
+        }
+		
+		
+		
+		
+
  
-        maxChosenProfit =  0; //Update with your answer.
+        maxChosenProfit =  maxprof; //Update with your answer.
         
         //TODO: Enter your GUC mail here
-        String email = "";
+        String email = "maryam.eloraby@gstudent.guc.edu.eg";
         System.out.println("Email: " + email);
     }
 		
+	
+	
 	
 	
 	public static int max(int a, int b)
@@ -41,9 +100,8 @@ public class SubWarehouse {
 	    }
 	
 	
-	
-	
 
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 		
 		SubWarehouse SW = new SubWarehouse();
@@ -77,10 +135,7 @@ public class SubWarehouse {
 		
 		SW.optimizeSelection();
 		System.out.println( "Max Profit " + SW.maxChosenProfit); //optimum answer should be maxChosenProfit = 150
-
-		
-		
-		
+	
 		//Step 2 :
 		//TODO: Try out your solution on more complex datasets that are used in practical world
 		
@@ -88,17 +143,14 @@ public class SubWarehouse {
 		//Uncomment to load the dataset before re-running your method again
 		
 		
-		
-		/*DataLoader.loadArray("kp100.txt", SW.itemWeights, SW.itemProfits, SW.maxCapacity);
-		 * 
-		SW.maxCapacity= 49877;
-		SW.availableItems = 10000 ;
-		SW.optimizeSelection();
-		System.out.println( "Max Profit " + SW.maxChosenProfit); // should be Max Profit 594669   
-		*
-		*
-		*/
-
+//		DataLoader dl = new DataLoader();
+//		
+//		SW.maxCapacity= 49877;
+//		SW.availableItems = 10000 ;
+//		dl.loadArray("kp100.txt" ,SW.itemWeights,SW.itemProfits,0);
+//		SW.optimizeSelection();
+//		System.out.println( "Max Profit " + SW.maxChosenProfit); // should be Max Profit 594669   
+//
 
 		
 		
