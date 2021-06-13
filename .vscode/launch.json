@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch DataLoader",
+            "request": "launch",
+            "mainClass": "DataLoader",
+            "projectName": "Warehouse-Facility-Project_a2128e6a"
+        },
+        {
+            "type": "java",
+            "name": "Launch SubWarehouse",
+            "request": "launch",
+            "mainClass": "SubWarehouse",
+            "projectName": "Warehouse-Facility-Project_a2128e6a"
+        },
+        {
+            "type": "java",
+            "name": "Launch DataLoader(1)",
+            "request": "launch",
+            "mainClass": "Storage.DataLoader",
+            "projectName": "WarehouseFacility"
+        },
+        {
+            "type": "java",
+            "name": "Launch SubWarehouse(1)",
+            "request": "launch",
+            "mainClass": "Storage.SubWarehouse",
+            "projectName": "WarehouseFacility"
+        }
+    ]
+}
