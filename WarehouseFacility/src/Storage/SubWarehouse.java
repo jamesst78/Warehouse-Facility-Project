@@ -17,32 +17,45 @@ public class SubWarehouse {
 	
 	public void optimizeSelection()
 	{
-		//TODO: Create a method that optimizes the selection of items in order to produce the most profit and make the most out of the storage space.
-		
-		//Your code here
-		//You're allowed to use any other pre-defined methods.
-		
-		
-	
-        
- 
-        maxChosenProfit =  0; //Update with your answer.
-        
+		//making sure values are set right
+		if(itemProfits.size()==0 || itemWeights.size()==0 || itemWeights.size()!=itemProfits.size() || maxCapacity<=0){
+			maxChosenProfit = 0;
+			return;
+		}
+
+		int n = itemProfits.size();
+		int[][] table = new int[n][maxCapacity + 1];
+
+		for(int i=0; i < n; i++) {
+			table[i][0] = 0;
+		}
+
+		for(int i=0; i<=maxCapacity; i++){
+			if(itemWeights.get(0)<=i){
+				table[0][i] = itemProfits.get(0);
+			}
+		}
+
+		for(int i=1; i<n; i++){
+			for(int j=1; j<=maxCapacity; j++){
+				int newProfit = 0;
+				int prevProfit = 0;
+				if(itemWeights.get(i)<=j){
+					newProfit = itemProfits.get(i) + table[i-1][j-itemWeights.get(i)];
+				}
+				prevProfit = table[i-1][j];
+				table[i][j] = max(prevProfit, newProfit);
+			}
+		}
+
+        maxChosenProfit =  table[n-1][maxCapacity]; //Update with your answer.
+
         //TODO: Enter your GUC mail here
-        String email = "";
+        String email = "shehabeldin.solyman@student.guc.edu.eg";
         System.out.println("Email: " + email);
     }
-		
-	
-	
-	public static int max(int a, int b)
-	    {
-	      return (a > b) ? a : b;
-	    }
-	
-	
-	
-	
+
+	public static int max(int a, int b) { return (a > b) ? a : b; }
 
 	public static void main(String[] args) {
 		
@@ -87,20 +100,18 @@ public class SubWarehouse {
 		
 		//Uncomment to load the dataset before re-running your method again
 		
-		
-		
-		/*DataLoader.loadArray("kp100.txt", SW.itemWeights, SW.itemProfits, SW.maxCapacity);
-		 * 
+
+
+		DataLoader.loadArray("kp100.txt", SW.itemWeights, SW.itemProfits, SW.maxCapacity);
+
 		SW.maxCapacity= 49877;
 		SW.availableItems = 10000 ;
 		SW.optimizeSelection();
-		System.out.println( "Max Profit " + SW.maxChosenProfit); // should be Max Profit 594669   
-		*
-		*
-		*/
+		System.out.println( "Max Profit " + SW.maxChosenProfit); // should be Max Profit 594669
 
 
-		
+
+
 		
 		
 		
