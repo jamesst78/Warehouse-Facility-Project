@@ -10,7 +10,7 @@ public class SubWarehouse {
 	ArrayList<Integer> itemProfits = new ArrayList<>(); 					
 	int maxChosenProfit;
 	int availableItems;
-	
+	int[][] mem;
 	
 	
 	
@@ -25,13 +25,30 @@ public class SubWarehouse {
 		
 	
         
- 
-        maxChosenProfit =  0; //Update with your answer.
+		mem = new int[itemProfits.size()][maxCapacity+1];
+		for(int i = 0; i < itemProfits.size(); i++)
+		    for(int j = 0; j < maxCapacity+1; j++)
+			    mem[i][j] = -1;
+        maxChosenProfit = DP(itemProfits.size()-1, maxCapacity); //Update with your answer.
         
         //TODO: Enter your GUC mail here
         String email = "";
         System.out.println("Email: " + email);
     }
+
+		public int DP(int i, int cap)
+		{
+		    if(i == -1 || cap == 0)
+				return 0;
+		    
+			if(mem[i][cap] != -1)
+				return mem[i][cap];
+			
+			if(itemWeights.get(i) > cap)
+				return mem[i][cap] = max(mem[i][cap], DP(i-1, cap));
+
+			return mem[i][cap] = max(max(itemProfits.get(i) + DP(i-1, cap-itemWeights.get(i)), DP(i-1, cap)), mem[i][cap]);
+		}
 		
 	
 	
