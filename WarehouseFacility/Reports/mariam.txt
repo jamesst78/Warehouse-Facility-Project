@@ -1,0 +1,84 @@
+..java:1:    PackageCase:    Package name contains upper case characters
+..java:3:    UnnecessaryImport:      Unused import 'java.io.Console'
+..java:5:    UnnecessaryImport:      Unused import 'java.util.HashMap'
+..java:9:    AtLeastOneConstructor:  Each class should declare at least one constructor
+..java:12:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the maxCapacity field if you want a default access modifier
+..java:12:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:13:   LooseCoupling:  Avoid using implementation types like 'ArrayList'; use the interface instead
+..java:13:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the itemWeights field if you want a default access modifier
+..java:13:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:14:   LooseCoupling:  Avoid using implementation types like 'ArrayList'; use the interface instead
+..java:14:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the itemProfits field if you want a default access modifier
+..java:14:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:15:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the maxChosenProfit field if you want a default access modifier
+..java:15:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:16:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the availableItems field if you want a default access modifier
+..java:16:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:31:   ShortVariable:  Avoid variables with short names like t
+..java:31:   LocalVariableCouldBeFinal:      Local variable 't' could be declared final
+..java:45:   LocalVariableCouldBeFinal:      Local variable 'pow_set_size' could be declared final
+..java:45:   LocalVariableNamingConventions: The local variable name 'pow_set_size' doesn't match '[a-z][a-zA-Z0-9]*'       
+..java:50:   LocalVariableCouldBeFinal:      Local variable 'iterator1' could be declared final
+..java:50:   LawOfDemeter:   Potential violation of Law of Demeter (method chain calls)
+..java:51:   UnusedAssignment:       The initializer for variable 'entry1' is never used (overwritten on line 61)
+..java:53:   ShortVariable:  Avoid variables with short names like j
+..java:57:   AvoidInstantiatingObjectsInLoops:       Avoid instantiating new objects inside loops
+..java:57:   LocalVariableCouldBeFinal:      Local variable 'cell' could be declared final
+..java:64:   LawOfDemeter:   Potential violation of Law of Demeter (object not created locally)
+..java:64:   LawOfDemeter:   Potential violation of Law of Demeter (object not created locally)
+..java:65:   LawOfDemeter:   Potential violation of Law of Demeter (object not created locally)
+..java:66:   LawOfDemeter:   Potential violation of Law of Demeter (object not created locally)
+..java:89:   LocalVariableCouldBeFinal:      Local variable 'email' could be declared final
+..java:90:   SystemPrintln:  System.out.println is used
+..java:97:   ShortVariable:  Avoid variables with short names like a
+..java:97:   ShortVariable:  Avoid variables with short names like b
+..java:97:   MethodArgumentCouldBeFinal:     Parameter 'a' is not assigned and could be declared final
+..java:97:   MethodArgumentCouldBeFinal:     Parameter 'b' is not assigned and could be declared final
+..java:99:   UselessParentheses:     Useless parentheses.
+..java:105:  MethodArgumentCouldBeFinal:     Parameter 'args' is not assigned and could be declared final
+..java:107:  ShortVariable:  Avoid variables with short names like SW
+..java:107:  LocalVariableCouldBeFinal:      Local variable 'SW' could be declared final
+..java:107:  LocalVariableNamingConventions: The local variable name 'SW' doesn't match '[a-z][a-zA-Z0-9]*'
+..java:110:  LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:111:  LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:112:  LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:113:  LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:114:  LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:115:  LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:118:  LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:119:  LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:120:  LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:121:  LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:122:  LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:123:  LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:137:  SystemPrintln:  System.out.println is used
+..java:146:  ShortVariable:  Avoid variables with short names like dl
+..java:146:  LocalVariableCouldBeFinal:      Local variable 'dl' could be declared final
+..java:148:  UseUnderscoresInNumericLiterals:        Number 49877 should separate every third digit with an underscore      
+..java:149:  UseUnderscoresInNumericLiterals:        Number 10000 should separate every third digit with an underscore      
+..java:152:  SystemPrintln:  System.out.println is used
+LoosePackageCoupling    -       No packages or classes specified
+
+
+CollapsibleIfStatements:0
+LongVariable:0
+ForLoopVariableCount:0
+UnusedLocalVariable:0
+AddEmptyString:0
+CyclomaticComplexity:0
+AvoidDeeplyNestedIfStmts:0
+UnusedAssignment:1
+MethodArgumentCouldBeFinal:3
+AvoidInstantiatingObjectsInLoops:1
+PrematureDeclaration:0
+ShortVariable:6
+ControlStatementBraces:0
+UnusedFormalParameter:0
+LocalVariableCouldBeFinal:7
+
+
+
+would have been a good implementation for small inputs , but as the number of inputs increase , your overlapping subproblems increase in looping and you end up using more computational power 
+to compute the same problem multiple times
+so the solution to this is to store the results of the subproblems , when faced with the problem again , you retreive the pre-computed result from before.
+Read more on dynamic programming and check the attatched file.

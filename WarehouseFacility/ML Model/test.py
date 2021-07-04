@@ -8,17 +8,17 @@ from sklearn.preprocessing import StandardScaler
 
 
 
-wine = pd.read_csv("wine.data", names=["class", "alcohol", "malic_acid", "ash", "alcalinity_of_ash", "magnesium", "total_phenols",
-                                          "flavanoids", "nonflavanoid_phenols", "proanthocyanins", "color_intensity", "hue", 
-                                           "od280_od315_of_diluted_wines", "proline"])
+CodeAnalyser = pd.read_csv("vecs.data", names=["class","GoodCommitMessage","StressTested","CollapsibleIfStatements","LongVariable","ForLoopVariableCount",
+"UnusedLocalVariable","AddEmptyString","CyclomaticComplexity","AvoidDeeplyNestedIfStmts","UnusedAssignment","MethodArgumentCouldBeFinal",
+"AvoidInstantiatingObjectsInLoops","PrematureDeclaration","ShortVariable","ControlStatementBraces","UnusedFormalParameter","LocalVariableCouldBeFinal"]);
                                            
 
 
-print(wine.head());
+print(CodeAnalyser.head());
 
 
-X = wine.drop(["class"], axis=1)
-y = wine["class"]
+X = CodeAnalyser.drop(["class"], axis=1)
+y = CodeAnalyser["class"]
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=123)
 

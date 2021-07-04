@@ -1,0 +1,73 @@
+..java:1:    PackageCase:    Package name contains upper case characters
+..java:7:    AtLeastOneConstructor:  Each class should declare at least one constructor
+..java:10:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the maxCapacity field if you want a default access modifier
+..java:10:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:11:   LooseCoupling:  Avoid using implementation types like 'ArrayList'; use the interface instead
+..java:11:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the itemWeights field if you want a default access modifier
+..java:11:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:12:   LooseCoupling:  Avoid using implementation types like 'ArrayList'; use the interface instead
+..java:12:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the itemProfits field if you want a default access modifier
+..java:12:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:13:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the maxChosenProfit field if you want a default access modifier
+..java:13:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:14:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the availableItems field if you want a default access modifier
+..java:14:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:27:   LocalVariableCouldBeFinal:      Local variable 'profit' could be declared final
+..java:31:   LocalVariableCouldBeFinal:      Local variable 'email' could be declared final
+..java:32:   SystemPrintln:  System.out.println is used
+..java:34:   LooseCoupling:  Avoid using implementation types like 'ArrayList'; use the interface instead
+..java:34:   LooseCoupling:  Avoid using implementation types like 'ArrayList'; use the interface instead
+..java:34:   MethodArgumentCouldBeFinal:     Parameter 'MaxCapacity' is not assigned and could be declared final
+..java:34:   MethodArgumentCouldBeFinal:     Parameter 'Position' is not assigned and could be declared final
+..java:34:   MethodArgumentCouldBeFinal:     Parameter 'ProfitArray' is not assigned and could be declared final
+..java:34:   MethodArgumentCouldBeFinal:     Parameter 'itemWeight' is not assigned and could be declared final
+..java:34:   FormalParameterNamingConventions:       The method parameter name 'MaxCapacity' doesn't match '[a-z][a-zA-Z0-9]*'
+..java:34:   FormalParameterNamingConventions:       The method parameter name 'Position' doesn't match '[a-z][a-zA-Z0-9]*' 
+..java:34:   FormalParameterNamingConventions:       The method parameter name 'ProfitArray' doesn't match '[a-z][a-zA-Z0-9]*'
+..java:38:   OnlyOneReturn:  A method should have only one exit point, and that should be the last statement in the method  
+..java:42:   OnlyOneReturn:  A method should have only one exit point, and that should be the last statement in the method  
+..java:46:   LocalVariableCouldBeFinal:      Local variable 'temp0' could be declared final
+..java:47:   LocalVariableCouldBeFinal:      Local variable 'temp1' could be declared final
+..java:48:   UselessParentheses:     Useless parentheses.
+..java:52:   ShortVariable:  Avoid variables with short names like a
+..java:52:   ShortVariable:  Avoid variables with short names like b
+..java:52:   MethodArgumentCouldBeFinal:     Parameter 'a' is not assigned and could be declared final
+..java:52:   MethodArgumentCouldBeFinal:     Parameter 'b' is not assigned and could be declared final
+..java:54:   UselessParentheses:     Useless parentheses.
+..java:58:   MethodArgumentCouldBeFinal:     Parameter 'args' is not assigned and could be declared final
+..java:60:   ShortVariable:  Avoid variables with short names like SW
+..java:60:   LocalVariableCouldBeFinal:      Local variable 'SW' could be declared final
+..java:60:   LocalVariableNamingConventions: The local variable name 'SW' doesn't match '[a-z][a-zA-Z0-9]*'
+..java:62:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:63:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:64:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:65:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:66:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:67:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:70:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:71:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:72:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:73:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:74:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:75:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:90:   SystemPrintln:  System.out.println is used
+
+
+CollapsibleIfStatements:0
+LongVariable:0
+ForLoopVariableCount:0
+UnusedLocalVariable:0
+AddEmptyString:0
+CyclomaticComplexity:0
+AvoidDeeplyNestedIfStmts:0
+UnusedAssignment:0
+MethodArgumentCouldBeFinal:7
+AvoidInstantiatingObjectsInLoops:0
+PrematureDeclaration:0
+ShortVariable:3
+ControlStatementBraces:0
+UnusedFormalParameter:0
+LocalVariableCouldBeFinal:5
+
+
+Perfect implementation. Mergable.

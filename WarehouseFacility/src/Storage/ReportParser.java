@@ -11,7 +11,7 @@ public class ReportParser {
 	
 	public static void main(String[] args) {
 		
-		parseReportToVec("Reports/OptimumReport.txt");
+		parseReportToVec("Reports/ykersha.txt");
 	}
 	
 	

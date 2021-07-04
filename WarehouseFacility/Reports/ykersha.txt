@@ -1,0 +1,93 @@
+..java:1:    PackageCase:    Package name contains upper case characters
+..java:3:    UnnecessaryImport:      Unused import 'java.io.Console'
+..java:6:    AtLeastOneConstructor:  Each class should declare at least one constructor
+..java:8:    CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the maxCapacity field if you want a default access modifier
+..java:8:    DefaultPackage: Use explicit scoping instead of the default package private level
+..java:9:    LooseCoupling:  Avoid using implementation types like 'ArrayList'; use the interface instead
+..java:9:    CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the itemWeights field if you want a default access modifier
+..java:9:    DefaultPackage: Use explicit scoping instead of the default package private level
+..java:10:   LooseCoupling:  Avoid using implementation types like 'ArrayList'; use the interface instead
+..java:10:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the itemProfits field if you want a default access modifier
+..java:10:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:11:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the maxChosenProfit field if you want a default access modifier
+..java:11:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:12:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the availableItems field if you want a default access modifier
+..java:12:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:14:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the memo field if you want 
+a default access modifier
+..java:14:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:17:   UnusedPrivateMethod:    Avoid unused private methods such as 'dp()'.
+..java:17:   ShortMethodName:        Avoid using short method names
+..java:20:   ControlStatementBraces: This statement should have braces
+..java:21:   ControlStatementBraces: This statement should have braces
+..java:27:   ShortMethodName:        Avoid using short method names
+..java:27:   ShortVariable:  Avoid variables with short names like id
+..java:27:   ShortVariable:  Avoid variables with short names like w
+..java:27:   MethodArgumentCouldBeFinal:     Parameter 'id' is not assigned and could be declared final
+..java:27:   MethodArgumentCouldBeFinal:     Parameter 'w' is not assigned and could be declared final
+..java:30:   OnlyOneReturn:  A method should have only one exit point, and that should be the last statement in the method  
+..java:30:   ControlStatementBraces: This statement should have braces
+..java:33:   OnlyOneReturn:  A method should have only one exit point, and that should be the last statement in the method  
+..java:33:   ControlStatementBraces: This statement should have braces
+..java:36:   OnlyOneReturn:  A method should have only one exit point, and that should be the last statement in the method  
+..java:36:   ControlStatementBraces: This statement should have braces
+..java:43:   ShortVariable:  Avoid variables with short names like id
+..java:43:   ShortVariable:  Avoid variables with short names like w
+..java:43:   MethodArgumentCouldBeFinal:     Parameter 'id' is not assigned and could be declared final
+..java:43:   MethodArgumentCouldBeFinal:     Parameter 'w' is not assigned and could be declared final
+..java:46:   OnlyOneReturn:  A method should have only one exit point, and that should be the last statement in the method  
+..java:46:   ControlStatementBraces: This statement should have braces
+..java:48:   PrematureDeclaration:   Avoid declaring a variable if it is unreferenced before a possible exit point.
+..java:48:   ShortVariable:  Avoid variables with short names like v1
+..java:49:   PrematureDeclaration:   Avoid declaring a variable if it is unreferenced before a possible exit point.
+..java:49:   ShortVariable:  Avoid variables with short names like v2
+..java:52:   OnlyOneReturn:  A method should have only one exit point, and that should be the last statement in the method  
+..java:77:   LocalVariableCouldBeFinal:      Local variable 'email' could be declared final
+..java:78:   SystemPrintln:  System.out.println is used
+..java:81:   ShortVariable:  Avoid variables with short names like a
+..java:81:   ShortVariable:  Avoid variables with short names like b
+..java:81:   MethodArgumentCouldBeFinal:     Parameter 'a' is not assigned and could be declared final
+..java:81:   MethodArgumentCouldBeFinal:     Parameter 'b' is not assigned and could be declared final
+..java:82:   UselessParentheses:     Useless parentheses.
+..java:85:   MethodArgumentCouldBeFinal:     Parameter 'args' is not assigned and could be declared final
+..java:87:   ShortVariable:  Avoid variables with short names like SW
+..java:87:   LocalVariableCouldBeFinal:      Local variable 'SW' could be declared final
+..java:87:   LocalVariableNamingConventions: The local variable name 'SW' doesn't match '[a-z][a-zA-Z0-9]*'
+..java:90:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:91:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:92:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:93:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:94:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:95:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:97:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:98:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:99:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:100:  LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:101:  LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:102:  LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:112:  SystemPrintln:  System.out.println is used
+..java:139:  SystemPrintln:  System.out.println is used
+LoosePackageCoupling    -       No packages or classes specified
+
+
+CollapsibleIfStatements:0
+LongVariable:0
+ForLoopVariableCount:0
+UnusedLocalVariable:0
+AddEmptyString:0
+CyclomaticComplexity:0
+AvoidDeeplyNestedIfStmts:0
+UnusedAssignment:0
+MethodArgumentCouldBeFinal:7
+AvoidInstantiatingObjectsInLoops:0
+PrematureDeclaration:2
+ShortVariable:9
+ControlStatementBraces:6
+UnusedFormalParameter:0
+LocalVariableCouldBeFinal:2
+
+
+
+Great implementation for small inputs , but as the number of inputs increase , your overlapping subproblems increase in recursion and you end up using more computational power to compute the same problem multiple times
+so the solution to this is to store the results of the subproblems , when faced with the problem again , you retreive the pre-computed result from before.
+Read more on dynamic programming and check the attatched file.

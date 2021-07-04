@@ -1,0 +1,71 @@
+..java:1:    PackageCase:    Package name contains upper case characters
+..java:3:    UnnecessaryImport:      Unused import 'java.io.Console'
+..java:5:    AtLeastOneConstructor:  Each class should declare at least one constructor
+..java:8:    CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the maxCapacity field if you want a default access modifier
+..java:8:    DefaultPackage: Use explicit scoping instead of the default package private level
+..java:9:    LooseCoupling:  Avoid using implementation types like 'ArrayList'; use the interface instead
+..java:9:    CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the itemWeights field if you want a default access modifier
+..java:9:    DefaultPackage: Use explicit scoping instead of the default package private level
+..java:10:   LooseCoupling:  Avoid using implementation types like 'ArrayList'; use the interface instead
+..java:10:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the itemProfits field if you want a default access modifier
+..java:10:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:11:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the maxChosenProfit field if you want a default access modifier
+..java:11:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:12:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the availableItems field if you want a default access modifier
+..java:12:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:18:   CyclomaticComplexity:   The method 'optimizeSelection()' has a cyclomatic complexity of 11.
+..java:21:   UseCollectionIsEmpty:   Substitute calls to size() == 0 (or size() != 0, size() > 0, size() < 1) with calls to 
+isEmpty()
+..java:21:   UseCollectionIsEmpty:   Substitute calls to size() == 0 (or size() != 0, size() > 0, size() < 1) with calls to 
+isEmpty()
+..java:26:   ShortVariable:  Avoid variables with short names like n
+..java:26:   LocalVariableCouldBeFinal:      Local variable 'n' could be declared final
+..java:42:   UnusedAssignment:       The initializer for variable 'prevProfit' is never used (overwritten on line 46)       
+..java:54:   LocalVariableCouldBeFinal:      Local variable 'email' could be declared final
+..java:55:   SystemPrintln:  System.out.println is used
+..java:58:   ShortVariable:  Avoid variables with short names like a
+..java:58:   ShortVariable:  Avoid variables with short names like b
+..java:58:   MethodArgumentCouldBeFinal:     Parameter 'a' is not assigned and could be declared final
+..java:58:   MethodArgumentCouldBeFinal:     Parameter 'b' is not assigned and could be declared final
+..java:58:   UselessParentheses:     Useless parentheses.
+..java:60:   MethodArgumentCouldBeFinal:     Parameter 'args' is not assigned and could be declared final
+..java:62:   ShortVariable:  Avoid variables with short names like SW
+..java:62:   LocalVariableCouldBeFinal:      Local variable 'SW' could be declared final
+..java:62:   LocalVariableNamingConventions: The local variable name 'SW' doesn't match '[a-z][a-zA-Z0-9]*'
+..java:65:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:66:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:67:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:68:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:69:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:70:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:73:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:74:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:75:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:76:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:77:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:78:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:92:   SystemPrintln:  System.out.println is used
+..java:107:  UseUnderscoresInNumericLiterals:        Number 49877 should separate every third digit with an underscore
+..java:108:  UseUnderscoresInNumericLiterals:        Number 10000 should separate every third digit with an underscore      
+..java:110:  SystemPrintln:  System.out.println is used
+LoosePackageCoupling    -       No packages or classes specified
+
+
+CollapsibleIfStatements:0
+LongVariable:0
+ForLoopVariableCount:0
+UnusedLocalVariable:0
+AddEmptyString:0
+CyclomaticComplexity:1
+AvoidDeeplyNestedIfStmts:0
+UnusedAssignment:1
+MethodArgumentCouldBeFinal:3
+AvoidInstantiatingObjectsInLoops:0
+PrematureDeclaration:0
+ShortVariable:4
+ControlStatementBraces:0
+UnusedFormalParameter:0
+LocalVariableCouldBeFinal:3
+
+
+Perfect implementation , there is an UnusedAssignment 

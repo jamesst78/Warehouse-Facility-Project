@@ -1,0 +1,84 @@
+..java:1:    PackageCase:    Package name contains upper case characters
+..java:3:    UnnecessaryImport:      Unused import 'java.io.Console'
+..java:6:    AtLeastOneConstructor:  Each class should declare at least one constructor
+..java:8:    CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the maxCapacity field if you want a default access modifier
+..java:8:    DefaultPackage: Use explicit scoping instead of the default package private level
+..java:9:    LooseCoupling:  Avoid using implementation types like 'ArrayList'; use the interface instead
+..java:9:    CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the itemWeights field if you want a default access modifier
+..java:9:    DefaultPackage: Use explicit scoping instead of the default package private level
+..java:10:   LooseCoupling:  Avoid using implementation types like 'ArrayList'; use the interface instead
+..java:10:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the itemProfits field if you want a default access modifier
+..java:10:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:11:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the maxChosenProfit field if you want a default access modifier
+..java:11:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:12:   CommentDefaultAccessModifier:   To avoid mistakes add a comment at the beginning of the availableItems field if you want a default access modifier
+..java:12:   DefaultPackage: Use explicit scoping instead of the default package private level
+..java:14:   CyclomaticComplexity:   The method 'optimizeSelection()' has a cyclomatic complexity of 10.
+..java:21:   PrematureDeclaration:   Avoid declaring a variable if it is unreferenced before a possible exit point.
+..java:22:   PrematureDeclaration:   Avoid declaring a variable if it is unreferenced before a possible exit point.
+..java:22:   LocalVariableCouldBeFinal:      Local variable 'subsets' could be declared final
+..java:23:   PrematureDeclaration:   Avoid declaring a variable if it is unreferenced before a possible exit point.
+..java:24:   UseUnderscoresInNumericLiterals:        Number 10000 should separate every third digit with an underscore      
+..java:26:   SystemPrintln:  System.out.println is used
+..java:30:   AvoidInstantiatingObjectsInLoops:       Avoid instantiating new objects inside loops
+..java:30:   LocalVariableCouldBeFinal:      Local variable 'subset' could be declared final
+..java:33:   ControlStatementBraces: This statement should have braces
+..java:38:   LocalVariableCouldBeFinal:      Local variable 'curSet' could be declared final
+..java:39:   LocalVariableCouldBeFinal:      Local variable 'capacity' could be declared final
+..java:40:   LocalVariableCouldBeFinal:      Local variable 'profit' could be declared final
+..java:50:   SystemPrintln:  System.out.println is used
+..java:53:   LocalVariableCouldBeFinal:      Local variable 'email' could be declared final
+..java:54:   SystemPrintln:  System.out.println is used
+..java:57:   ShortVariable:  Avoid variables with short names like a
+..java:57:   ShortVariable:  Avoid variables with short names like b
+..java:57:   MethodArgumentCouldBeFinal:     Parameter 'a' is not assigned and could be declared final
+..java:57:   MethodArgumentCouldBeFinal:     Parameter 'b' is not assigned and could be declared final
+..java:58:   UselessParentheses:     Useless parentheses.
+..java:61:   LooseCoupling:  Avoid using implementation types like 'ArrayList'; use the interface instead
+..java:61:   MethodArgumentCouldBeFinal:     Parameter 'set' is not assigned and could be declared final
+..java:62:   LocalVariableCouldBeFinal:      Local variable 'alteredProfits' could be declared final
+..java:65:   LocalVariableCouldBeFinal:      Local variable 'i' could be declared final
+..java:72:   LooseCoupling:  Avoid using implementation types like 'ArrayList'; use the interface instead
+..java:72:   MethodArgumentCouldBeFinal:     Parameter 'profits' is not assigned and could be declared final
+..java:74:   LocalVariableCouldBeFinal:      Local variable 'i' could be declared final
+..java:80:   MethodArgumentCouldBeFinal:     Parameter 'args' is not assigned and could be declared final
+..java:82:   ShortVariable:  Avoid variables with short names like SW
+..java:82:   LocalVariableCouldBeFinal:      Local variable 'SW' could be declared final
+..java:82:   LocalVariableNamingConventions: The local variable name 'SW' doesn't match '[a-z][a-zA-Z0-9]*'
+..java:85:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:86:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:87:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:88:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:89:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:90:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:92:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:93:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:94:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:95:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:96:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:97:   LawOfDemeter:   Potential violation of Law of Demeter (static property access)
+..java:107:  SystemPrintln:  System.out.println is used
+
+
+CollapsibleIfStatements:0
+LongVariable:0
+ForLoopVariableCount:0
+UnusedLocalVariable:0
+AddEmptyString:0
+CyclomaticComplexity:1
+AvoidDeeplyNestedIfStmts:0
+UnusedAssignment:0
+MethodArgumentCouldBeFinal:5
+AvoidInstantiatingObjectsInLoops:1
+PrematureDeclaration:3
+ShortVariable:3
+ControlStatementBraces:1
+UnusedFormalParameter:0
+LocalVariableCouldBeFinal:10
+
+
+
+Great implementation for small inputs , but as the number of inputs increase , your overlapping subproblems increase in looping and you end up using more computational power 
+to compute the same problem multiple times
+so the solution to this is to store the results of the subproblems , when faced with the problem again , you retreive the pre-computed result from before.
+Read more on dynamic programming and check the attatched file.
