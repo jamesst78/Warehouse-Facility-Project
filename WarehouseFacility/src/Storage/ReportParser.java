@@ -1,17 +1,30 @@
 package Storage;
 
+import static org.junit.Assert.assertTrue;
+
+import java.awt.List;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Scanner;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class ReportParser {
 	
+	ArrayList<String[]> dataLines ;
 	
-	public static void main(String[] args) {
-		
-		parseReportToVec("Reports/ykersha.txt");
+	public static void main(String[] args) throws IOException {
+	       
+		ReportParser rp = new ReportParser();
+		rp.dataLines = new ArrayList<>();
+		rp.parseReportToVec("Reports/ykersha.txt");
 	}
 	
 	
@@ -20,7 +33,7 @@ public class ReportParser {
 
 	
 	
-	public static  void parseReportToVec(String filename)
+	public   void parseReportToVec(String filename) throws IOException
 	{
 		Hashtable<String, Integer> codevec = new Hashtable<>();
 		Hashtable<String, Integer> codemetrics = new Hashtable<>();
@@ -42,6 +55,7 @@ public class ReportParser {
 		try {
 	      File myObj = new File(filename);
 	      Scanner myReader = new Scanner(myObj);
+
 	      while (myReader.hasNextLine()) {
 	        String data = myReader.nextLine();
 	        System.out.println(data);
@@ -118,6 +132,15 @@ public class ReportParser {
 	      }
 	      myReader.close();
 	      
+	      
+	      //open the csv file and assign data to it
+	      String [] csvString = new String[17];
+	      csvString[0] = "1";
+	      csvString[1] = "1";
+	      
+
+	      
+	      
 	      //Enumerate thru hash
 	      
 	      // create enumeration to store keys
@@ -133,12 +156,67 @@ public class ReportParser {
 	            System.out.println(key + ":" + codevec.get(key));
 	        }
 	      
+	        csvString[2] = codevec.get("CollapsibleIfStatements") + "";
+	        csvString[3] = codevec.get("LongVariable") + "";
+	        csvString[4] = codevec.get("ForLoopVariableCount") + "";
+	        csvString[5] = codevec.get("UnusedLocalVariable") + "";
+	        csvString[6] = codevec.get("AddEmptyString") + "";
+	        csvString[7] = codevec.get("CyclomaticComplexity") + "";
+	        csvString[8] = codevec.get("AvoidDeeplyNestedIfStmts") + "";
+	        csvString[9] = codevec.get("UnusedAssignment") + "";
+	        csvString[10] = codevec.get("MethodArgumentCouldBeFinal") + "";
+	        csvString[11] = codevec.get("AvoidInstantiatingObjectsInLoops") + "";
+	        csvString[12] = codevec.get("PrematureDeclaration") + "";
+	        csvString[13] = codevec.get("ShortVariable") + "";
+	        csvString[14] = codevec.get("ControlStatementBraces") + "";
+	        csvString[15] = codevec.get("UnusedFormalParameter") + "";
+	        csvString[16] = codevec.get("LocalVariableCouldBeFinal") + "";
+
+	        this.dataLines.add(csvString);
+
+
+	        this.givenDataArray_whenConvertToCSV_thenOutputCreated();
+
+
+	        
+
+
+
+	        
+	      
 	      
 	    } catch (FileNotFoundException e) {
 	      System.out.println("An error occurred.");
 	      e.printStackTrace();
 	    }
 		
+	}
+	
+	
+	public String convertToCSV(String[] data) {
+	    return Stream.of(data).map(this::escapeSpecialCharacters).collect(Collectors.joining(","));
+	}
+	
+	public String escapeSpecialCharacters(String data) {
+	    String escapedData = data.replaceAll("\\R", " ");
+	    if (data.contains(",") || data.contains("\"") || data.contains("'")) {
+	        data = data.replace("\"", "\"\"");
+	        escapedData = "\"" + data + "\"";
+	    }
+	    return escapedData;
+	}
+	
+	public void givenDataArray_whenConvertToCSV_thenOutputCreated() throws IOException {
+	    File csvOutputFile = new File("./vecs.data");
+	    FileWriter fr = new FileWriter(csvOutputFile, true);
+	    BufferedWriter br = new BufferedWriter(fr);
+
+	    try (PrintWriter pw = new PrintWriter(br)) {
+	        dataLines.stream()
+	          .map(this::convertToCSV)
+	          .forEach(pw::println);
+	    }
+	    assertTrue(csvOutputFile.exists());
 	}
 
 }
