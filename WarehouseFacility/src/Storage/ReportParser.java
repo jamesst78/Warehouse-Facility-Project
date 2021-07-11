@@ -1,6 +1,5 @@
 package Storage;
 
-import static org.junit.Assert.assertTrue;
 
 import java.awt.List;
 import java.io.BufferedWriter;
@@ -216,7 +215,7 @@ public class ReportParser {
 	          .map(this::convertToCSV)
 	          .forEach(pw::println);
 	    }
-	    assertTrue(csvOutputFile.exists());
+	   // assertTrue(csvOutputFile.exists());
 	}
 
 }
