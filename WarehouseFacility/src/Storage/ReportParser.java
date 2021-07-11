@@ -24,7 +24,7 @@ public class ReportParser {
 	       
 		ReportParser rp = new ReportParser();
 		rp.dataLines = new ArrayList<>();
-		rp.parseReportToVec("Reports/ykersha.txt");
+		rp.parseReportToVec("Reports/AutomatedReport.txt");
 	}
 	
 	

@@ -1,0 +1,1 @@
+pmd.bat -d Src/Storage/SubWarehouse.java -R MyRules.xml -f text -r Reports/AutomatedReport.txt && java Src/Storage/ReportParser.java
