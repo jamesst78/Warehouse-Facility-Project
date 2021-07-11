@@ -1,1 +1,4 @@
-pmd.bat -d Src/Storage/SubWarehouse.java -R MyRules.xml -f text -r Reports/AutomatedReport.txt && java -jar ReportParser.jar
+pmd.bat -d Src/Storage/SubWarehouse.java -R MyRules.xml -f text -r Reports/AutomatedReport.txt & java -jar ReportParser.jar
+
+
+stopped at t-11 ahmed hossam

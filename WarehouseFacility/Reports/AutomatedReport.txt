@@ -1,113 +1,140 @@
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:20:	UnnecessaryImport:	Unused import 'units.ArmyListener'
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:24:	GodClass:	Possible God Class (WMC=66, ATFD=41, TCC=27.473%)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:25:	ImmutableField:	Private field 'name' could be made final; it is only initialized in the declaration or constructor.
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:26:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:26:	ImmutableField:	Private field 'controlledCities' could be made final; it is only initialized in the declaration or constructor.
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:27:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:27:	ImmutableField:	Private field 'controlledArmies' could be made final; it is only initialized in the declaration or constructor.
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:32:	MethodArgumentCouldBeFinal:	Parameter 'name' is not assigned and could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:34:	UseDiamondOperator:	Explicit type arguments can be replaced by Diamond Operator
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:35:	UseDiamondOperator:	Explicit type arguments can be replaced by Diamond Operator
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:42:	MethodArgumentCouldBeFinal:	Parameter 'treasury' is not assigned and could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:50:	MethodArgumentCouldBeFinal:	Parameter 'food' is not assigned and could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:58:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:62:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:70:	MethodArgumentCouldBeFinal:	Parameter 'listener' is not assigned and could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:74:	MethodArgumentCouldBeFinal:	Parameter 'cityName' is not assigned and could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:74:	MethodArgumentCouldBeFinal:	Parameter 'type' is not assigned and could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:74:	CognitiveComplexity:	The method 'recruitUnit(String, String)' has a cognitive complexity of 30, current threshold is 15
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:74:	CyclomaticComplexity:	The method 'recruitUnit(String, String)' has a cyclomatic complexity of 14.
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:74:	NPathComplexity:	The method 'recruitUnit(String, String)' has an NPath complexity of 342, current threshold is 200
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:77:	LocalVariableCouldBeFinal:	Local variable 'c' could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:78:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:78:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:83:	ShortVariable:	Avoid variables with short names like m
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:84:	LocalVariableCouldBeFinal:	Local variable 'mb' could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:85:	LiteralsFirstInComparisons:	Position literals first in String comparisons
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:85:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:86:	AvoidDeeplyNestedIfStmts:	Deeply nested if..then statements are hard to read
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:86:	CollapsibleIfStatements:	These nested if statements could be combined
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:87:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:89:	LiteralsFirstInComparisons:	Position literals first in String comparisons
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:89:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:90:	AvoidDeeplyNestedIfStmts:	Deeply nested if..then statements are hard to read
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:90:	CollapsibleIfStatements:	These nested if statements could be combined
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:91:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:93:	LiteralsFirstInComparisons:	Position literals first in String comparisons
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:93:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:94:	AvoidDeeplyNestedIfStmts:	Deeply nested if..then statements are hard to read
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:94:	CollapsibleIfStatements:	These nested if statements could be combined
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:95:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:98:	LawOfDemeter:	Potential violation of Law of Demeter (object not created locally)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:99:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:100:	ShortVariable:	Avoid variables with short names like u
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:100:	LocalVariableCouldBeFinal:	Local variable 'u' could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:100:	LawOfDemeter:	Potential violation of Law of Demeter (object not created locally)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:101:	LawOfDemeter:	Potential violation of Law of Demeter (object not created locally)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:102:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:102:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:103:	LawOfDemeter:	Potential violation of Law of Demeter (object not created locally)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:109:	MethodArgumentCouldBeFinal:	Parameter 'cityName' is not assigned and could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:109:	MethodArgumentCouldBeFinal:	Parameter 'type' is not assigned and could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:109:	CognitiveComplexity:	The method 'build(String, String)' has a cognitive complexity of 45, current threshold is 15
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:109:	CyclomaticComplexity:	The method 'build(String, String)' has a cyclomatic complexity of 30.
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:109:	NPathComplexity:	The method 'build(String, String)' has an NPath complexity of 201684, current threshold is 200
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:111:	LocalVariableCouldBeFinal:	Local variable 'c' could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:112:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:112:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:117:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:117:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:118:	ShortVariable:	Avoid variables with short names like a
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:119:	LiteralsFirstInComparisons:	Position literals first in String comparisons
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:119:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:120:	LocalVariableCouldBeFinal:	Local variable 'building' could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:120:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:122:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:122:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:125:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:128:	LiteralsFirstInComparisons:	Position literals first in String comparisons
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:128:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:129:	LocalVariableCouldBeFinal:	Local variable 'building' could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:129:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:131:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:131:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:134:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:137:	LiteralsFirstInComparisons:	Position literals first in String comparisons
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:137:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:138:	LocalVariableCouldBeFinal:	Local variable 'building' could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:138:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:140:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:140:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:143:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:146:	LiteralsFirstInComparisons:	Position literals first in String comparisons
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:146:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:147:	LocalVariableCouldBeFinal:	Local variable 'building' could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:147:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:149:	OnlyOneReturn:	A method should have only one exit point, and that should be the last statement in the method
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:149:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:152:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:155:	LiteralsFirstInComparisons:	Position literals first in String comparisons
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:155:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:156:	LocalVariableCouldBeFinal:	Local variable 'building' could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:156:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:158:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:161:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:170:	ShortVariable:	Avoid variables with short names like b
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:170:	MethodArgumentCouldBeFinal:	Parameter 'b' is not assigned and could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:173:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:174:	LocalVariableCouldBeFinal:	Local variable 'initialValue' could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:181:	MethodArgumentCouldBeFinal:	Parameter 'city' is not assigned and could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:181:	MethodArgumentCouldBeFinal:	Parameter 'unit' is not assigned and could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:182:	ShortVariable:	Avoid variables with short names like a
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:182:	LocalVariableCouldBeFinal:	Local variable 'a' could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:183:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:184:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:184:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:191:	MethodArgumentCouldBeFinal:	Parameter 'army' is not assigned and could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:191:	MethodArgumentCouldBeFinal:	Parameter 'city' is not assigned and could be declared final
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:193:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:193:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:193:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:194:	ControlStatementBraces:	This statement should have braces
-C:\xampp\htdocs\GitHub Repositiries\Warehouse-Facility-Project\WarehouseFacility\src\Storage\SubWarehouse.java:196:	ControlStatementBraces:	This statement should have braces
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:3:	NoPackage:	All classes, interfaces, enums and annotations must belong to a named package
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:3:	UseUtilityClass:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:3:	ClassNamingConventions:	The utility class name 'LeftRecursionElimination' doesn't match '[A-Z][a-zA-Z0-9]+(Utils?|Helper|Constants)'
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:5:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:5:	CommentDefaultAccessModifier:	To avoid mistakes add a comment at the beginning of the cfg field if you want a default access modifier
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:5:	DefaultPackage:	Use explicit scoping instead of the default package private level
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:7:	MethodArgumentCouldBeFinal:	Parameter 'args' is not assigned and could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:9:	LocalVariableCouldBeFinal:	Local variable 'input' could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:10:	LocalVariableCouldBeFinal:	Local variable 'output' could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:11:	SystemPrintln:	System.out.print is used
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:14:	MethodArgumentCouldBeFinal:	Parameter 'input' is not assigned and could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:14:	MethodNamingConventions:	The static method name 'LRE' doesn't match '[a-z][a-zA-Z0-9]*'
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:16:	LocalVariableCouldBeFinal:	Local variable 'splitted' could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:18:	ForLoopCanBeForeach:	This for loop can be replaced by a foreach loop
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:19:	AvoidInstantiatingObjectsInLoops:	Avoid instantiating new objects inside loops
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:19:	ShortVariable:	Avoid variables with short names like x
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:19:	LocalVariableCouldBeFinal:	Local variable 'x' could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:24:	LocalVariableCouldBeFinal:	Local variable 'newCFG' could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:32:	MethodArgumentCouldBeFinal:	Parameter 'index' is not assigned and could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:33:	LocalVariableCouldBeFinal:	Local variable 'beforeArrow' could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:33:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:34:	LocalVariableCouldBeFinal:	Local variable 'leftRec' could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:35:	LocalVariableCouldBeFinal:	Local variable 'good' could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:37:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:37:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:38:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:38:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:38:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:38:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:38:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:39:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:39:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:39:	ControlStatementBraces:	This statement should have braces
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:41:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:41:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:41:	ControlStatementBraces:	This statement should have braces
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:43:	ShortVariable:	Avoid variables with short names like G
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:43:	LocalVariableNamingConventions:	The local variable name 'G' doesn't match '[a-z][a-zA-Z0-9]*'
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:44:	UseCollectionIsEmpty:	Substitute calls to size() == 0 (or size() != 0, size() > 0, size() < 1) with calls to isEmpty()
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:45:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:46:	ForLoopCanBeForeach:	This for loop can be replaced by a foreach loop
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:46:	ControlStatementBraces:	This statement should have braces
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:47:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:47:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:47:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:49:	LocalVariableCouldBeFinal:	Local variable 'remainingG' could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:50:	ForLoopCanBeForeach:	This for loop can be replaced by a foreach loop
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:50:	ControlStatementBraces:	This statement should have braces
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:51:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:53:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:59:	CyclomaticComplexity:	The method 'filterWrong()' has a cyclomatic complexity of 9.
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:63:	AddEmptyString:	Do not add empty strings
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:63:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:63:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:63:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:63:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:63:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:63:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:63:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:63:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:63:	UselessParentheses:	Useless parentheses.
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:63:	UselessParentheses:	Useless parentheses.
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:64:	AddEmptyString:	Do not add empty strings
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:64:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:64:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:66:	AvoidReassigningLoopVariables:	Avoid reassigning the loop control variable 'i'
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:70:	LocalVariableCouldBeFinal:	Local variable 'update' could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:71:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:72:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:72:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:72:	CollapsibleIfStatements:	These nested if statements could be combined
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:73:	LawOfDemeter:	Potential violation of Law of Demeter (static property access)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:80:	LocalVariableCouldBeFinal:	Local variable 'update' could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:81:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:81:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:82:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:82:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:82:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:82:	LawOfDemeter:	Potential violation of Law of Demeter (static property access)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:82:	LawOfDemeter:	Potential violation of Law of Demeter (static property access)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:83:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:83:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:83:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:83:	LawOfDemeter:	Potential violation of Law of Demeter (static property access)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:83:	LawOfDemeter:	Potential violation of Law of Demeter (static property access)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:84:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:84:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:84:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:84:	LawOfDemeter:	Potential violation of Law of Demeter (static property access)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:84:	LawOfDemeter:	Potential violation of Law of Demeter (static property access)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:85:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:85:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:85:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:85:	LawOfDemeter:	Potential violation of Law of Demeter (static property access)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:85:	LawOfDemeter:	Potential violation of Law of Demeter (static property access)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:92:	MethodArgumentCouldBeFinal:	Parameter 'index' is not assigned and could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:92:	MethodArgumentCouldBeFinal:	Parameter 'newRule' is not assigned and could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:92:	CyclomaticComplexity:	The method 'updatePosition(CFG, int)' has a cyclomatic complexity of 8.
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:93:	LocalVariableCouldBeFinal:	Local variable 'updatecfg' could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:98:	ControlStatementBraces:	This statement should have braces
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:100:	AvoidInstantiatingObjectsInLoops:	Avoid instantiating new objects inside loops
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:100:	LocalVariableCouldBeFinal:	Local variable 'newafterArrow' could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:101:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:101:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:102:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:102:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:102:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:102:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:102:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:103:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:103:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:104:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:104:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:104:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:104:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:104:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:107:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:107:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:107:	ControlStatementBraces:	This statement should have braces
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:110:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:118:	ForLoopCanBeForeach:	This for loop can be replaced by a foreach loop
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:120:	LawOfDemeter:	Potential violation of Law of Demeter (method chain calls)
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:120:	UseStringBufferForStringAppends:	Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:124:	ShortClassName:	Avoid short class names like CFG
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:126:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:126:	UseDiamondOperator:	Explicit type arguments can be replaced by Diamond Operator
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:128:	CommentDefaultAccessModifier:	To avoid mistakes add a comment at the beginning of the CFG constructor if you want a default access modifier
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:130:	UseDiamondOperator:	Explicit type arguments can be replaced by Diamond Operator
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:132:	MethodArgumentCouldBeFinal:	Parameter 'rule' is not assigned and could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:132:	CommentDefaultAccessModifier:	To avoid mistakes add a comment at the beginning of the CFG constructor if you want a default access modifier
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:134:	LocalVariableCouldBeFinal:	Local variable 'splitted' could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:140:	LooseCoupling:	Avoid using implementation types like 'ArrayList'; use the interface instead
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:140:	MethodArgumentCouldBeFinal:	Parameter 'afterArrow' is not assigned and could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:140:	MethodArgumentCouldBeFinal:	Parameter 'beforeArrow' is not assigned and could be declared final
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:150:	ForLoopCanBeForeach:	This for loop can be replaced by a foreach loop
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:151:	UseStringBufferForStringAppends:	Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:151:	UselessParentheses:	Useless parentheses.
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:154:	UseStringBufferForStringAppends:	Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
+F:\xampp\htdocs\GitHub\Bachelor Warehouse\WarehouseFacility\src\Storage\SubWarehouse.java:156:	UseStringBufferForStringAppends:	Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
 LoosePackageCoupling	-	No packages or classes specified
